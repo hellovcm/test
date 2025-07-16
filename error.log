@@ -1,0 +1,975 @@
+[root@ds-spectrum-4 ~]# /usr/lpp/mmfs/bin/mmbuildgpl
+--------------------------------------------------------
+mmbuildgpl: Building GPL (5.2.2.1) module begins at Wed Jul  2 01:35:33 AM EDT 2025.
+--------------------------------------------------------
+Verifying Kernel Header...
+  kernel version = 51400570 (514000570024000, 5.14.0-570.24.1.el9_6.ppc64le, 5.14.0-570.24) 
+  module include dir = /lib/modules/5.14.0-570.24.1.el9_6.ppc64le/build/include 
+  module build dir   = /lib/modules/5.14.0-570.24.1.el9_6.ppc64le/build 
+  kernel source dir  = /usr/src/linux-5.14.0-570.24.1.el9_6.ppc64le/include 
+  Found valid kernel header file under /usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le/include
+Getting Kernel Cipher mode...
+   Will use skcipher routines
+Verifying Compiler...
+  make is present at /bin/make
+  cpp is present at /bin/cpp
+  gcc is present at /bin/gcc
+  g++ is present at /bin/g++
+  ld is present at /bin/ld
+Verifying Additional System Headers...
+  Verifying kernel-headers is installed ...
+    Command: /bin/rpm -q kernel-headers  
+    The required package kernel-headers is installed
+make World ...
+Verifying that tools to build the portability layer exist....
+cpp present
+gcc present
+g++ present
+ld present
+rm -rf /usr/lpp/mmfs/src/include /usr/lpp/mmfs/src/bin /usr/lpp/mmfs/src/lib
+mkdir /usr/lpp/mmfs/src/include /usr/lpp/mmfs/src/bin /usr/lpp/mmfs/src/lib
+rm -f //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver
+cleaning (/usr/lpp/mmfs/src/ibm-kxi)
+make[1]: Entering directory '/usr/lpp/mmfs/src/ibm-kxi'
+rm -f  install.he; \
+ for i in cxiTypes.h cxiSystem.h cxi2gpfs.h cxiVFSStats.h cxiCred.h cxiIOBuffer.h cxiSharedSeg.h cxiMode.h Trace.h cxiMmap.h cxiAtomic.h cxiTSFattr.h cxiAclUser.h cxiLinkList.h cxiDmapi.h LockNames.h lxtrace.h cxiGcryptoDefs.h cxiSynchNames.h cxiMiscNames.h cxiPMem.h DirIds.h; do \
+    (set -x; rm -f -r /usr/lpp/mmfs/src/include/cxi/$i) done
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiTypes.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiSystem.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxi2gpfs.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiVFSStats.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiCred.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiMode.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/Trace.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiMmap.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiAtomic.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiTSFattr.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiAclUser.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiLinkList.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiDmapi.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/LockNames.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/lxtrace.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiGcryptoDefs.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiSynchNames.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiMiscNames.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiPMem.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/DirIds.h
+make[1]: Leaving directory '/usr/lpp/mmfs/src/ibm-kxi'
+cleaning (/usr/lpp/mmfs/src/ibm-linux)
+make[1]: Entering directory '/usr/lpp/mmfs/src/ibm-linux'
+rm -f install.he; \
+ for i in cxiTypes-plat.h cxiSystem-plat.h cxiIOBuffer-plat.h cxiSharedSeg-plat.h cxiMode-plat.h Trace-plat.h cxiAtomic-plat.h cxiMmap-plat.h cxiVFSStats-plat.h cxiCred-plat.h cxiDmapi-plat.h; do \
+                (set -x; rm -rf /usr/lpp/mmfs/src/include/cxi/$i) done
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiTypes-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiSystem-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiMode-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/Trace-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiAtomic-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiMmap-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiVFSStats-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiCred-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiDmapi-plat.h
+make[1]: Leaving directory '/usr/lpp/mmfs/src/ibm-linux'
+cleaning (/usr/lpp/mmfs/src/gpl-linux)
+make[1]: Entering directory '/usr/lpp/mmfs/src/gpl-linux'
+Pre-kbuild step 1...
+/usr/bin/make -C /usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le M=/usr/lpp/mmfs/src/gpl-linux clean
+make[2]: Entering directory '/usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le'
+make[2]: Leaving directory '/usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le'
+rm -f -f /lib/modules/`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`/extra/tracedev.ko
+rm -f -f /lib/modules/`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`/extra/mmfslinux.ko
+rm -f -f /lib/modules/`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`/extra/mmfs26.ko
+rm -f -f /usr/lpp/mmfs/src/../bin/lxtrace-`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`
+rm -f -f *.o .depends .*.cmd *.ko *.a *.mod.c core *_shipped *map *mod.c.saved *.symvers *.ko.ver ./*.ver install.he
+rm -f -rf usr
+make[1]: Leaving directory '/usr/lpp/mmfs/src/gpl-linux'
+for i in ibm-kxi ibm-linux gpl-linux ; do \
+(cd $i; echo  "installing header files" "(`pwd`)"; \
+/usr/bin/make DESTDIR=/usr/lpp/mmfs/src  Headers; \
+exit $?) || exit 1; \
+done
+installing header files (/usr/lpp/mmfs/src/ibm-kxi)
+make[1]: Entering directory '/usr/lpp/mmfs/src/ibm-kxi'
+Making directory /usr/lpp/mmfs/src/include/cxi
++ /usr/bin/install cxiTypes.h /usr/lpp/mmfs/src/include/cxi/cxiTypes.h
++ /usr/bin/install cxiSystem.h /usr/lpp/mmfs/src/include/cxi/cxiSystem.h
++ /usr/bin/install cxi2gpfs.h /usr/lpp/mmfs/src/include/cxi/cxi2gpfs.h
++ /usr/bin/install cxiVFSStats.h /usr/lpp/mmfs/src/include/cxi/cxiVFSStats.h
++ /usr/bin/install cxiCred.h /usr/lpp/mmfs/src/include/cxi/cxiCred.h
++ /usr/bin/install cxiIOBuffer.h /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer.h
++ /usr/bin/install cxiSharedSeg.h /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg.h
++ /usr/bin/install cxiMode.h /usr/lpp/mmfs/src/include/cxi/cxiMode.h
++ /usr/bin/install Trace.h /usr/lpp/mmfs/src/include/cxi/Trace.h
++ /usr/bin/install cxiMmap.h /usr/lpp/mmfs/src/include/cxi/cxiMmap.h
++ /usr/bin/install cxiAtomic.h /usr/lpp/mmfs/src/include/cxi/cxiAtomic.h
++ /usr/bin/install cxiTSFattr.h /usr/lpp/mmfs/src/include/cxi/cxiTSFattr.h
++ /usr/bin/install cxiAclUser.h /usr/lpp/mmfs/src/include/cxi/cxiAclUser.h
++ /usr/bin/install cxiLinkList.h /usr/lpp/mmfs/src/include/cxi/cxiLinkList.h
++ /usr/bin/install cxiDmapi.h /usr/lpp/mmfs/src/include/cxi/cxiDmapi.h
++ /usr/bin/install LockNames.h /usr/lpp/mmfs/src/include/cxi/LockNames.h
++ /usr/bin/install lxtrace.h /usr/lpp/mmfs/src/include/cxi/lxtrace.h
++ /usr/bin/install cxiGcryptoDefs.h /usr/lpp/mmfs/src/include/cxi/cxiGcryptoDefs.h
++ /usr/bin/install cxiSynchNames.h /usr/lpp/mmfs/src/include/cxi/cxiSynchNames.h
++ /usr/bin/install cxiMiscNames.h /usr/lpp/mmfs/src/include/cxi/cxiMiscNames.h
++ /usr/bin/install cxiPMem.h /usr/lpp/mmfs/src/include/cxi/cxiPMem.h
++ /usr/bin/install DirIds.h /usr/lpp/mmfs/src/include/cxi/DirIds.h
+touch install.he
+make[1]: Leaving directory '/usr/lpp/mmfs/src/ibm-kxi'
+installing header files (/usr/lpp/mmfs/src/ibm-linux)
+make[1]: Entering directory '/usr/lpp/mmfs/src/ibm-linux'
++ /usr/bin/install cxiTypes-plat.h /usr/lpp/mmfs/src/include/cxi/cxiTypes-plat.h
++ /usr/bin/install cxiSystem-plat.h /usr/lpp/mmfs/src/include/cxi/cxiSystem-plat.h
++ /usr/bin/install cxiIOBuffer-plat.h /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer-plat.h
++ /usr/bin/install cxiSharedSeg-plat.h /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg-plat.h
++ /usr/bin/install cxiMode-plat.h /usr/lpp/mmfs/src/include/cxi/cxiMode-plat.h
++ /usr/bin/install Trace-plat.h /usr/lpp/mmfs/src/include/cxi/Trace-plat.h
++ /usr/bin/install cxiAtomic-plat.h /usr/lpp/mmfs/src/include/cxi/cxiAtomic-plat.h
++ /usr/bin/install cxiMmap-plat.h /usr/lpp/mmfs/src/include/cxi/cxiMmap-plat.h
++ /usr/bin/install cxiVFSStats-plat.h /usr/lpp/mmfs/src/include/cxi/cxiVFSStats-plat.h
++ /usr/bin/install cxiCred-plat.h /usr/lpp/mmfs/src/include/cxi/cxiCred-plat.h
++ /usr/bin/install cxiDmapi-plat.h /usr/lpp/mmfs/src/include/cxi/cxiDmapi-plat.h
+touch install.he
+make[1]: Leaving directory '/usr/lpp/mmfs/src/ibm-linux'
+installing header files (/usr/lpp/mmfs/src/gpl-linux)
+make[1]: Entering directory '/usr/lpp/mmfs/src/gpl-linux'
+Making directory /usr/lpp/mmfs/src/include/gpl-linux
++ /usr/bin/install Shark-gpl.h /usr/lpp/mmfs/src/include/gpl-linux/Shark-gpl.h
++ /usr/bin/install prelinux.h /usr/lpp/mmfs/src/include/gpl-linux/prelinux.h
++ /usr/bin/install postlinux.h /usr/lpp/mmfs/src/include/gpl-linux/postlinux.h
++ /usr/bin/install linux2gpfs.h /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h
++ /usr/bin/install verdep.h /usr/lpp/mmfs/src/include/gpl-linux/verdep.h
++ /usr/bin/install Logger-gpl.h /usr/lpp/mmfs/src/include/gpl-linux/Logger-gpl.h
++ /usr/bin/install arch-gpl.h /usr/lpp/mmfs/src/include/gpl-linux/arch-gpl.h
++ /usr/bin/install oplock.h /usr/lpp/mmfs/src/include/gpl-linux/oplock.h
++ /usr/bin/install tracelin.h /usr/lpp/mmfs/src/include/gpl-linux/tracelin.h
++ /usr/bin/install nvfs.h /usr/lpp/mmfs/src/include/gpl-linux/nvfs.h
+touch install.he
+make[1]: Leaving directory '/usr/lpp/mmfs/src/gpl-linux'
+make[1]: Entering directory '/usr/lpp/mmfs/src/gpl-linux'
+Pre-kbuild step 1...
+Pre-kbuild step 2...
+touch install.he
+Invoking Kbuild...
+/usr/bin/make -C /usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le ARCH=powerpc M=/usr/lpp/mmfs/src/gpl-linux CONFIGDIR=/usr/lpp/mmfs/src/config  ; \
+if [ $? -ne 0 ]; then \
+        exit 1;\
+fi
+make[2]: Entering directory '/usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le'
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/tracelin.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/tracedev-ksyms.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/ktrccalls.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/relaytrc.o
+  LD [M]  /usr/lpp/mmfs/src/gpl-linux/tracedev.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/mmfsmod.o
+  LD [M]  /usr/lpp/mmfs/src/gpl-linux/mmfs26.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.o
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘export_acceptable’:
+/usr/lpp/mmfs/src/gpl-linux/kx.c:3192:29: error: passing argument 1 of ‘inode_permission’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 3192 |      err = inode_permission(&init_user_ns, pdentry->d_inode, MAY_EXEC);
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             struct user_namespace *
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:3077:22: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 3077 | int inode_permission(struct mnt_idmap *, struct inode *, int);
+      |                      ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘truncate_it’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:704:56: error: passing argument 1 of ‘notify_change’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  704 | #   define NOTIFY_CHANGE(dentryP, attrP) notify_change(&init_user_ns, dentryP, attrP, NULL)
+      |                                                        ^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:4484:8: note: in expansion of macro ‘NOTIFY_CHANGE’
+ 4484 |   rc = NOTIFY_CHANGE(dentry, &attrs);
+      |        ^~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:3075:19: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 3075 | int notify_change(struct mnt_idmap *, struct dentry *,
+      |                   ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘check_permission’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:1000:82: error: passing argument 1 of ‘generic_permission’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 1000 | #define LINUX_GENERIC_PERMISSION(iP, mode, flags, check_acl)  generic_permission(&init_user_ns, iP, mode)
+      |                                                                                  ^~~~~~~~~~~~~
+      |                                                                                  |
+      |                                                                                  struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:4530:10: note: in expansion of macro ‘LINUX_GENERIC_PERMISSION’
+ 4530 |   return LINUX_GENERIC_PERMISSION(inode, submask, flags, NULL);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:3078:24: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 3078 | int generic_permission(struct mnt_idmap *, struct inode *, int);
+      |                        ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘link_by_fh’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:705:56: error: passing argument 2 of ‘vfs_link’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  705 | #   define VFS_LINK(vfsP, sdP, diP, tdP) vfs_link(sdP, &init_user_ns,  diP, tdP, NULL)
+      |                                                        ^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:5551:13: note: in expansion of macro ‘VFS_LINK’
+ 5551 |     error = VFS_LINK(mnt, dst_dentry, dir_dentry->d_inode, new_dentry);
+      |             ^~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2090:31: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2090 | int vfs_link(struct dentry *, struct mnt_idmap *, struct inode *,
+      |                               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘rename_by_fh’:
+/usr/lpp/mmfs/src/gpl-linux/kx.c:5715:5: error: ‘struct renamedata’ has no member named ‘old_mnt_userns’
+ 5715 |   rd.old_mnt_userns = &init_user_ns;
+      |     ^
+/usr/lpp/mmfs/src/gpl-linux/kx.c:5716:5: error: ‘struct renamedata’ has no member named ‘new_mnt_userns’
+ 5716 |   rd.new_mnt_userns = &init_user_ns;
+      |     ^
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘unlink_by_name’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:706:53: error: passing argument 1 of ‘vfs_unlink’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  706 | #   define VFS_UNLINK(vfsP, diP, dP)     vfs_unlink(&init_user_ns,diP, dP, NULL)
+      |                                                     ^~~~~~~~~~~~~
+      |                                                     |
+      |                                                     struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:6270:13: note: in expansion of macro ‘VFS_UNLINK’
+ 6270 |     error = VFS_UNLINK(mnt, dir_dentry->d_inode, new_dentry);
+      |             ^~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2093:16: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2093 | int vfs_unlink(struct mnt_idmap *, struct inode *, struct dentry *,
+      |                ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:749:44: error: passing argument 1 of ‘vfs_rmdir’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  749 | #define VFS_RMDIR(vfsP, diP, dP) vfs_rmdir(&init_user_ns, diP, dP)
+      |                                            ^~~~~~~~~~~~~
+      |                                            |
+      |                                            struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:6272:13: note: in expansion of macro ‘VFS_RMDIR’
+ 6272 |     error = VFS_RMDIR(mnt, dir_dentry->d_inode, new_dentry);
+      |             ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2092:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2092 | int vfs_rmdir(struct mnt_idmap *, struct inode *, struct dentry *);
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘create_by_name’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:779:23: error: passing argument 1 of ‘vfs_create’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  779 |            vfs_create(&init_user_ns, diP, dP, mode, kflags & LOOKUP_EXCL)
+      |                       ^~~~~~~~~~~~~
+      |                       |
+      |                       struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:6496:13: note: in expansion of macro ‘VFS_CREATE’
+ 6496 |     error = VFS_CREATE(dir_dentry->d_inode, new_dentry, mode, NULL, flags);
+      |             ^~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2082:16: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2082 | int vfs_create(struct mnt_idmap *, struct inode *,
+      |                ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:747:50: error: passing argument 1 of ‘vfs_mkdir’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  747 | #define VFS_MKDIR(vfsP, diP, dP, mode) vfs_mkdir(&init_user_ns, diP, dP, mode)
+      |                                                  ^~~~~~~~~~~~~
+      |                                                  |
+      |                                                  struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:6513:13: note: in expansion of macro ‘VFS_MKDIR’
+ 6513 |     error = VFS_MKDIR(mnt, dir_dentry->d_inode, new_dentry, mode);
+      |             ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2084:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2084 | int vfs_mkdir(struct mnt_idmap *, struct inode *,
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:748:55: error: passing argument 1 of ‘vfs_mknod’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  748 | #define VFS_MKNOD(vfsP, diP, dP, mode, dev) vfs_mknod(&init_user_ns, diP, dP, mode, dev)
+      |                                                       ^~~~~~~~~~~~~
+      |                                                       |
+      |                                                       struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:6515:13: note: in expansion of macro ‘VFS_MKNOD’
+ 6515 |     error = VFS_MKNOD(mnt, dir_dentry->d_inode, new_dentry, mode, flags);
+      |             ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2086:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2086 | int vfs_mknod(struct mnt_idmap *, struct inode *, struct dentry *,
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘mknode_by_name’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:748:55: error: passing argument 1 of ‘vfs_mknod’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  748 | #define VFS_MKNOD(vfsP, diP, dP, mode, dev) vfs_mknod(&init_user_ns, diP, dP, mode, dev)
+      |                                                       ^~~~~~~~~~~~~
+      |                                                       |
+      |                                                       struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/kx.c:6628:13: note: in expansion of macro ‘VFS_MKNOD’
+ 6628 |     error = VFS_MKNOD(mnt, dir_dentry->d_inode, new_dentry, mode, dev);
+      |             ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2086:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2086 | int vfs_mknod(struct mnt_idmap *, struct inode *, struct dentry *,
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c: At top level:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:2661:32: warning: ‘enum page_entry_size’ declared inside parameter list will not be visible outside of this definition or declaration
+ 2661 | #define GPFS_PE_SIZE_TYPE enum page_entry_size
+      |                                ^~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:272:5: note: in expansion of macro ‘GPFS_PE_SIZE_TYPE’
+  272 |     GPFS_PE_SIZE_TYPE  pe_size)
+      |     ^~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:66,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:272:24: error: parameter 2 (‘pe_size’) has incomplete type
+  272 |     GPFS_PE_SIZE_TYPE  pe_size)
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c: In function ‘mmpmem_huge_fault’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:2662:24: error: ‘PE_SIZE_PTE’ undeclared (first use in this function); did you mean ‘ZERO_SIZE_PTR’?
+ 2662 | #define GPFS_PTE_FAULT PE_SIZE_PTE
+      |                        ^~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:288:20: note: in expansion of macro ‘GPFS_PTE_FAULT’
+  288 |     if (pe_size == GPFS_PTE_FAULT)
+      |                    ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:2662:24: note: each undeclared identifier is reported only once for each function it appears in
+ 2662 | #define GPFS_PTE_FAULT PE_SIZE_PTE
+      |                        ^~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:288:20: note: in expansion of macro ‘GPFS_PTE_FAULT’
+  288 |     if (pe_size == GPFS_PTE_FAULT)
+      |                    ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:2663:24: error: ‘PE_SIZE_PMD’ undeclared (first use in this function); did you mean ‘ZERO_SIZE_PTR’?
+ 2663 | #define GPFS_PMD_FAULT PE_SIZE_PMD
+      |                        ^~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:291:24: note: in expansion of macro ‘GPFS_PMD_FAULT’
+  291 |     else if(pe_size == GPFS_PMD_FAULT)
+      |                        ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:2664:24: error: ‘PE_SIZE_PUD’ undeclared (first use in this function); did you mean ‘ZERO_SIZE_PTR’?
+ 2664 | #define GPFS_PUD_FAULT PE_SIZE_PUD
+      |                        ^~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:294:25: note: in expansion of macro ‘GPFS_PUD_FAULT’
+  294 |     else if (pe_size == GPFS_PUD_FAULT)
+      |                         ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c: In function ‘mmpmem_fault’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:2662:24: error: ‘PE_SIZE_PTE’ undeclared (first use in this function); did you mean ‘ZERO_SIZE_PTR’?
+ 2662 | #define GPFS_PTE_FAULT PE_SIZE_PTE
+      |                        ^~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:311:33: note: in expansion of macro ‘GPFS_PTE_FAULT’
+  311 |   return mmpmem_huge_fault(vmf, GPFS_PTE_FAULT);
+      |                                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/inode.c: In function ‘gpfs_i_permission_noacl’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:1000:82: error: passing argument 1 of ‘generic_permission’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 1000 | #define LINUX_GENERIC_PERMISSION(iP, mode, flags, check_acl)  generic_permission(&init_user_ns, iP, mode)
+      |                                                                                  ^~~~~~~~~~~~~
+      |                                                                                  |
+      |                                                                                  struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/inode.c:2370:16: note: in expansion of macro ‘LINUX_GENERIC_PERMISSION’
+ 2370 |     rc = (int) LINUX_GENERIC_PERMISSION(iP, reqMode, flags, NULL);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:3078:24: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 3078 | int generic_permission(struct mnt_idmap *, struct inode *, int);
+      |                        ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:70,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/inode.c: In function ‘gpfs_i_getattr’:
+/usr/lpp/mmfs/src/gpl-linux/inode.c:3030:22: error: passing argument 1 of ‘generic_fillattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 3030 |     generic_fillattr(&init_user_ns, iP, kstatP);
+      |                      ^~~~~~~~~~~~~
+      |                      |
+      |                      struct user_namespace *
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:3491:23: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 3491 | void generic_fillattr(struct mnt_idmap *, struct inode *, struct kstat *);
+      |                       ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:70,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/inode.c: At top level:
+/usr/lpp/mmfs/src/gpl-linux/inode.c:3133:11: error: initialization of ‘int (*)(const struct xattr_handler *, struct mnt_idmap *, struct dentry *, struct inode *, const char *, const void *, size_t,  int)’ {aka ‘int (*)(const struct xattr_handler *, struct mnt_idmap *, struct dentry *, struct inode *, const char *, const void *, long unsigned int,  int)’} from incompatible pointer type ‘int (*)(const struct xattr_handler *, struct user_namespace *, struct dentry *, struct inode *, const char *, const void *, size_t,  int)’ {aka ‘int (*)(const struct xattr_handler *, struct user_namespace *, struct dentry *, struct inode *, const char *, const void *, long unsigned int,  int)’} [-Werror=incompatible-pointer-types]
+ 3133 |   set:    gpfs_xattr_set
+      |           ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/inode.c:3133:11: note: (near initialization for ‘gpfs_xattr_handler.set’)
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/inode.c: In function ‘cxiInitInodeSecurity’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:1221:77: error: implicit declaration of function ‘security_old_inode_init_security’; did you mean ‘security_inode_init_security’? [-Werror=implicit-function-declaration]
+ 1221 | #   define SECURITY_INODE_INIT_SECURITY(inode, dir, qstr, name, value, len) security_old_inode_init_security(inode, dir, qstr, (const char **)name, value, len)      |                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/inode.c:4040:8: note: in expansion of macro ‘SECURITY_INODE_INIT_SECURITY’
+ 4040 |   rc = SECURITY_INODE_INIT_SECURITY(iP, parentP, &dentryP->d_name,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:83,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c: At top level:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:152:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} [-Werror=incompatible-pointer-types]
+  152 |   create:      gpfs_i_create,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:152:16: note: (near initialization for ‘gpfs_iops_stdperm.create’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:154:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct file *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  154 |   tmpfile:     gpfs_i_tmpfile,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:154:16: note: (near initialization for ‘gpfs_iops_stdperm.tmpfile’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:162:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, const char *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, const char *)’ [-Werror=incompatible-pointer-types]
+  162 |   symlink:     gpfs_i_symlink,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:162:16: note: (near initialization for ‘gpfs_iops_stdperm.symlink’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:163:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  163 |   mkdir:       gpfs_i_mkdir,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:163:16: note: (near initialization for ‘gpfs_iops_stdperm.mkdir’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:165:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  165 |   mknod:       gpfs_i_mknod,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:165:16: note: (near initialization for ‘gpfs_iops_stdperm.mknod’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:166:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ [-Werror=incompatible-pointer-types]
+  166 |   rename:      gpfs_i_rename,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:166:16: note: (near initialization for ‘gpfs_iops_stdperm.rename’)
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:839:31: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  839 | #define GENERIC_PERMISSION_OP gpfs_i_permission_noacl
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:171:16: note: in expansion of macro ‘GENERIC_PERMISSION_OP’
+  171 |   permission:  GENERIC_PERMISSION_OP,
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:839:31: note: (near initialization for ‘gpfs_iops_stdperm.permission’)
+  839 | #define GENERIC_PERMISSION_OP gpfs_i_permission_noacl
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:171:16: note: in expansion of macro ‘GENERIC_PERMISSION_OP’
+  171 |   permission:  GENERIC_PERMISSION_OP,
+      |                ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:83,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:172:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  172 |   setattr:     gpfs_i_setattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:172:16: note: (near initialization for ‘gpfs_iops_stdperm.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:173:16: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  173 |   getattr:     gpfs_i_getattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:173:16: note: (near initialization for ‘gpfs_iops_stdperm.getattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:183:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  183 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:183:12: note: (near initialization for ‘gpfs_iops_stdperm.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:187:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  187 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:187:12: note: (near initialization for ‘gpfs_iops_stdperm.get_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:199:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} [-Werror=incompatible-pointer-types]
+  199 |   create:      gpfs_i_create,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:199:16: note: (near initialization for ‘gpfs_iops_xperm.create’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:201:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct file *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  201 |   tmpfile:     gpfs_i_tmpfile,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:201:16: note: (near initialization for ‘gpfs_iops_xperm.tmpfile’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:209:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, const char *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, const char *)’ [-Werror=incompatible-pointer-types]
+  209 |   symlink:     gpfs_i_symlink,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:209:16: note: (near initialization for ‘gpfs_iops_xperm.symlink’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:210:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  210 |   mkdir:       gpfs_i_mkdir,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:210:16: note: (near initialization for ‘gpfs_iops_xperm.mkdir’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:212:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  212 |   mknod:       gpfs_i_mknod,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:212:16: note: (near initialization for ‘gpfs_iops_xperm.mknod’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:213:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ [-Werror=incompatible-pointer-types]
+  213 |   rename:      gpfs_i_rename,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:213:16: note: (near initialization for ‘gpfs_iops_xperm.rename’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:218:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  218 |   permission:  gpfs_i_permission,
+      |                ^~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:218:16: note: (near initialization for ‘gpfs_iops_xperm.permission’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:219:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  219 |   setattr:     gpfs_i_setattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:219:16: note: (near initialization for ‘gpfs_iops_xperm.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:220:16: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  220 |   getattr:     gpfs_i_getattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:220:16: note: (near initialization for ‘gpfs_iops_xperm.getattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:230:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  230 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:230:12: note: (near initialization for ‘gpfs_iops_xperm.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:234:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  234 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:234:12: note: (near initialization for ‘gpfs_iops_xperm.get_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:245:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} [-Werror=incompatible-pointer-types]
+  245 |   create:      gpfs_i_create,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:245:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.create’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:247:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct file *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  247 |   tmpfile:     gpfs_i_tmpfile,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:247:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.tmpfile’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:258:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, const char *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, const char *)’ [-Werror=incompatible-pointer-types]
+  258 |   symlink:     gpfs_i_symlink,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:258:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.symlink’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:259:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  259 |   mkdir:       gpfs_i_mkdir,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:259:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.mkdir’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:261:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  261 |   mknod:       gpfs_i_mknod,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:261:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.mknod’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:262:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ [-Werror=incompatible-pointer-types]
+  262 |   rename:      gpfs_i_rename,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:262:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.rename’)
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:839:31: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  839 | #define GENERIC_PERMISSION_OP gpfs_i_permission_noacl
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:267:16: note: in expansion of macro ‘GENERIC_PERMISSION_OP’
+  267 |   permission:  GENERIC_PERMISSION_OP,
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:839:31: note: (near initialization for ‘gpfs_dir_iops_stdperm.permission’)
+  839 | #define GENERIC_PERMISSION_OP gpfs_i_permission_noacl
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:267:16: note: in expansion of macro ‘GENERIC_PERMISSION_OP’
+  267 |   permission:  GENERIC_PERMISSION_OP,
+      |                ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:83,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:268:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  268 |   setattr:     gpfs_i_setattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:268:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:269:16: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  269 |   getattr:     gpfs_i_getattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:269:16: note: (near initialization for ‘gpfs_dir_iops_stdperm.getattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:276:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  276 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:276:12: note: (near initialization for ‘gpfs_dir_iops_stdperm.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:280:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  280 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:280:12: note: (near initialization for ‘gpfs_dir_iops_stdperm.get_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:291:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} [-Werror=incompatible-pointer-types]
+  291 |   create:      gpfs_i_create,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:291:16: note: (near initialization for ‘gpfs_dir_iops_xperm.create’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:293:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct file *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  293 |   tmpfile:     gpfs_i_tmpfile,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:293:16: note: (near initialization for ‘gpfs_dir_iops_xperm.tmpfile’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:304:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, const char *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, const char *)’ [-Werror=incompatible-pointer-types]
+  304 |   symlink:     gpfs_i_symlink,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:304:16: note: (near initialization for ‘gpfs_dir_iops_xperm.symlink’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:305:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  305 |   mkdir:       gpfs_i_mkdir,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:305:16: note: (near initialization for ‘gpfs_dir_iops_xperm.mkdir’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:307:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  307 |   mknod:       gpfs_i_mknod,
+      |                ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:307:16: note: (near initialization for ‘gpfs_dir_iops_xperm.mknod’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:308:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ [-Werror=incompatible-pointer-types]
+  308 |   rename:      gpfs_i_rename,
+      |                ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:308:16: note: (near initialization for ‘gpfs_dir_iops_xperm.rename’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:313:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  313 |   permission:  gpfs_i_permission,
+      |                ^~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:313:16: note: (near initialization for ‘gpfs_dir_iops_xperm.permission’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:314:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  314 |   setattr:     gpfs_i_setattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:314:16: note: (near initialization for ‘gpfs_dir_iops_xperm.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:315:16: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  315 |   getattr:     gpfs_i_getattr,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:315:16: note: (near initialization for ‘gpfs_dir_iops_xperm.getattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:322:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  322 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:322:12: note: (near initialization for ‘gpfs_dir_iops_xperm.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:326:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  326 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:326:12: note: (near initialization for ‘gpfs_dir_iops_xperm.get_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:335:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  bool)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  _Bool)’} [-Werror=incompatible-pointer-types]
+  335 |   create:       gpfs_i_create,     /* create             */
+      |                 ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:335:17: note: (near initialization for ‘gpfs_link_iops.create’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:337:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct file *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct file *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct file *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  337 |   tmpfile:     gpfs_i_tmpfile,
+      |                ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:337:16: note: (near initialization for ‘gpfs_link_iops.tmpfile’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:345:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, const char *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, const char *)’ [-Werror=incompatible-pointer-types]
+  345 |   symlink:      gpfs_i_symlink,    /* symlink            */
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:345:17: note: (near initialization for ‘gpfs_link_iops.symlink’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:346:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int)’} [-Werror=incompatible-pointer-types]
+  346 |   mkdir:        gpfs_i_mkdir,      /* mkdir              */
+      |                 ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:346:17: note: (near initialization for ‘gpfs_link_iops.mkdir’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:348:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, umode_t,  dev_t)’ {aka ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, short unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  348 |   mknod:        gpfs_i_mknod,      /* mknod              */
+      |                 ^~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:348:17: note: (near initialization for ‘gpfs_link_iops.mknod’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:349:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct dentry *, struct inode *, struct dentry *, unsigned int)’ [-Werror=incompatible-pointer-types]
+  349 |   rename:       gpfs_i_rename,     /* rename             */
+      |                 ^~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:349:17: note: (near initialization for ‘gpfs_link_iops.rename’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:363:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  363 |   setattr:      gpfs_i_setattr,    /* setattr */
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:363:17: note: (near initialization for ‘gpfs_link_iops.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:364:17: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  364 |   getattr:      gpfs_i_getattr,    /* getattr */
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:364:17: note: (near initialization for ‘gpfs_link_iops.getattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:371:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  371 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:371:12: note: (near initialization for ‘gpfs_link_iops.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:375:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  375 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:375:12: note: (near initialization for ‘gpfs_link_iops.get_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:385:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  385 |   setattr:      gpfs_i_setattr,
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:385:17: note: (near initialization for ‘gpfs_special_iops_stdperm.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:386:17: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  386 |   getattr:      gpfs_i_getattr,    /* getattr */
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:386:17: note: (near initialization for ‘gpfs_special_iops_stdperm.getattr’)
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:839:31: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  839 | #define GENERIC_PERMISSION_OP gpfs_i_permission_noacl
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:387:16: note: in expansion of macro ‘GENERIC_PERMISSION_OP’
+  387 |   permission:  GENERIC_PERMISSION_OP,
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:839:31: note: (near initialization for ‘gpfs_special_iops_stdperm.permission’)
+  839 | #define GENERIC_PERMISSION_OP gpfs_i_permission_noacl
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:387:16: note: in expansion of macro ‘GENERIC_PERMISSION_OP’
+  387 |   permission:  GENERIC_PERMISSION_OP,
+      |                ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:83,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:394:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  394 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:394:12: note: (near initialization for ‘gpfs_special_iops_stdperm.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:398:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  398 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:398:12: note: (near initialization for ‘gpfs_special_iops_stdperm.get_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:407:17: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct iattr *)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct dentry *, struct iattr *)’ [-Werror=incompatible-pointer-types]
+  407 |   setattr:      gpfs_i_setattr,
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:407:17: note: (near initialization for ‘gpfs_special_iops_xperm.setattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:408:17: error: initialization of ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct mnt_idmap *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, u32,  unsigned int)’ {aka ‘int (*)(struct user_namespace *, const struct path *, struct kstat *, unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+  408 |   getattr:      gpfs_i_getattr,    /* getattr */
+      |                 ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:408:17: note: (near initialization for ‘gpfs_special_iops_xperm.getattr’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:409:16: error: initialization of ‘int (*)(struct mnt_idmap *, struct inode *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  409 |   permission:  gpfs_i_permission,
+      |                ^~~~~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:409:16: note: (near initialization for ‘gpfs_special_iops_xperm.permission’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:416:12: error: initialization of ‘int (*)(struct mnt_idmap *, struct dentry *, struct posix_acl *, int)’ from incompatible pointer type ‘int (*)(struct user_namespace *, struct inode *, struct posix_acl *, int)’ [-Werror=incompatible-pointer-types]
+  416 |   set_acl: gpfs_i_set_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:416:12: note: (near initialization for ‘gpfs_special_iops_xperm.set_acl’)
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:420:12: error: initialization of ‘struct posix_acl * (*)(struct mnt_idmap *, struct dentry *, int)’ from incompatible pointer type ‘struct posix_acl * (*)(struct inode *, int)’ [-Werror=incompatible-pointer-types]
+  420 |   get_acl: gpfs_i_get_acl,
+      |            ^~~~~~~~~~~~~~
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:420:12: note: (near initialization for ‘gpfs_special_iops_xperm.get_acl’)
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheOpen’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:779:23: error: passing argument 1 of ‘vfs_create’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  779 |            vfs_create(&init_user_ns, diP, dP, mode, kflags & LOOKUP_EXCL)
+      |                       ^~~~~~~~~~~~~
+      |                       |
+      |                       struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1824:12: note: in expansion of macro ‘VFS_CREATE’
+ 1824 |       rc = VFS_CREATE(ddP->d_inode, dP, mode, NULL, lookup_flags | LOOKUP_OPEN);
+      |            ^~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2082:16: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2082 | int vfs_create(struct mnt_idmap *, struct inode *,
+      |                ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:87,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1849:41: error: passing argument 1 of ‘dP->d_inode->i_op->setattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 1849 |         rc = dP->d_inode->i_op->setattr(&init_user_ns, dP, &iattr);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1849:41: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘pcache_create’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:779:23: error: passing argument 1 of ‘vfs_create’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  779 |            vfs_create(&init_user_ns, diP, dP, mode, kflags & LOOKUP_EXCL)
+      |                       ^~~~~~~~~~~~~
+      |                       |
+      |                       struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1936:11: note: in expansion of macro ‘VFS_CREATE’
+ 1936 |      rc = VFS_CREATE(diP, dP, mode, NULL, LOOKUP_CREATE | LOOKUP_EXCL | FMODE_READ | FMODE_WRITE | O_CREAT | O_EXCL);
+      |           ^~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2082:16: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2082 | int vfs_create(struct mnt_idmap *, struct inode *,
+      |                ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:747:50: error: passing argument 1 of ‘vfs_mkdir’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  747 | #define VFS_MKDIR(vfsP, diP, dP, mode) vfs_mkdir(&init_user_ns, diP, dP, mode)
+      |                                                  ^~~~~~~~~~~~~
+      |                                                  |
+      |                                                  struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1946:12: note: in expansion of macro ‘VFS_MKDIR’
+ 1946 |       rc = VFS_MKDIR(mntP, diP, dP, mode);
+      |            ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2084:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2084 | int vfs_mkdir(struct mnt_idmap *, struct inode *,
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:748:55: error: passing argument 1 of ‘vfs_mknod’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  748 | #define VFS_MKNOD(vfsP, diP, dP, mode, dev) vfs_mknod(&init_user_ns, diP, dP, mode, dev)
+      |                                                       ^~~~~~~~~~~~~
+      |                                                       |
+      |                                                       struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1954:12: note: in expansion of macro ‘VFS_MKNOD’
+ 1954 |       rc = VFS_MKNOD(mntP, diP, dP, mode, dev);
+      |            ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2086:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2086 | int vfs_mknod(struct mnt_idmap *, struct inode *, struct dentry *,
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:87,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheCreate’:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2421:37: error: passing argument 1 of ‘dP->d_inode->i_op->setattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 2421 |     rc = dP->d_inode->i_op->setattr(&init_user_ns, dP, &iattr);
+      |                                     ^~~~~~~~~~~~~
+      |                                     |
+      |                                     struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2421:37: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheRemove’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:706:53: error: passing argument 1 of ‘vfs_unlink’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  706 | #   define VFS_UNLINK(vfsP, diP, dP)     vfs_unlink(&init_user_ns,diP, dP, NULL)
+      |                                                     ^~~~~~~~~~~~~
+      |                                                     |
+      |                                                     struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2573:12: note: in expansion of macro ‘VFS_UNLINK’
+ 2573 |       rc = VFS_UNLINK(mntP, ddP->d_inode, dP);
+      |            ^~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2093:16: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2093 | int vfs_unlink(struct mnt_idmap *, struct inode *, struct dentry *,
+      |                ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:749:44: error: passing argument 1 of ‘vfs_rmdir’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  749 | #define VFS_RMDIR(vfsP, diP, dP) vfs_rmdir(&init_user_ns, diP, dP)
+      |                                            ^~~~~~~~~~~~~
+      |                                            |
+      |                                            struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2577:12: note: in expansion of macro ‘VFS_RMDIR’
+ 2577 |       rc = VFS_RMDIR(mntP, ddP->d_inode, dP);
+      |            ^~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2092:15: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2092 | int vfs_rmdir(struct mnt_idmap *, struct inode *, struct dentry *);
+      |               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheLink’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:705:56: error: passing argument 2 of ‘vfs_link’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  705 | #   define VFS_LINK(vfsP, sdP, diP, tdP) vfs_link(sdP, &init_user_ns,  diP, tdP, NULL)
+      |                                                        ^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2683:8: note: in expansion of macro ‘VFS_LINK’
+ 2683 |   rc = VFS_LINK(mntP, sdP, ddP->d_inode, tdP);
+      |        ^~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2090:31: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2090 | int vfs_link(struct dentry *, struct mnt_idmap *, struct inode *,
+      |                               ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/dir.c:56,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheSymlink’:
+/usr/lpp/mmfs/src/include/gpl-linux/verdep.h:760:57: error: passing argument 1 of ‘vfs_symlink’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  760 | # define VFS_SYMLINK(vfsP, diP, dP, nameP)  vfs_symlink(&init_user_ns, diP, dP, nameP);
+      |                                                         ^~~~~~~~~~~~~
+      |                                                         |
+      |                                                         struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2790:8: note: in expansion of macro ‘VFS_SYMLINK’
+ 2790 |   rc = VFS_SYMLINK(mntP, ddP->d_inode, dP, targetNameP);
+      |        ^~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:60,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/fs.h:2088:17: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+ 2088 | int vfs_symlink(struct mnt_idmap *, struct inode *,
+      |                 ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:87,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheGetACL’:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:2914:21: error: passing argument 1 of ‘vfs_getxattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 2914 |   rc = vfs_getxattr(&init_user_ns, dP, "system.nfs4_acl", aclBufP, *bufSize);
+      |                     ^~~~~~~~~~~~~
+      |                     |
+      |                     struct user_namespace *
+In file included from /usr/lpp/mmfs/src/gpl-linux/kx.c:70,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:61,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+./include/linux/xattr.h:75:22: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+   75 | ssize_t vfs_getxattr(struct mnt_idmap *, struct dentry *, const char *,
+      |                      ^~~~~~~~~~~~~~~~~~
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:87,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheSetattr’:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:3053:35: error: passing argument 1 of ‘dP->d_inode->i_op->setattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+ 3053 |   rc = dP->d_inode->i_op->setattr(&init_user_ns, dP, &iattr);
+      |                                   ^~~~~~~~~~~~~
+      |                                   |
+      |                                   struct user_namespace *
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:3053:35: note: expected ‘struct mnt_idmap *’ but argument is of type ‘struct user_namespace *’
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheRename’:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:3489:5: error: ‘struct renamedata’ has no member named ‘old_mnt_userns’
+ 3489 |   rd.old_mnt_userns = &init_user_ns;
+      |     ^
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:3490:5: error: ‘struct renamedata’ has no member named ‘new_mnt_userns’
+ 3490 |   rd.new_mnt_userns = &init_user_ns;
+      |     ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:66,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:54:
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c: In function ‘mmpmem_huge_fault’:
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:299:1: error: control reaches end of non-void function [-Werror=return-type]
+  299 | }
+      | ^
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c: In function ‘mmpmem_fault’:
+/usr/lpp/mmfs/src/gpl-linux/mmpmem.c:312:1: error: control reaches end of non-void function [-Werror=return-type]
+  312 | }
+      | ^
+cc1: some warnings being treated as errors
+make[3]: *** [scripts/Makefile.build:249: /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.o] Error 1
+make[2]: *** [Makefile:1947: /usr/lpp/mmfs/src/gpl-linux] Error 2
+make[2]: Leaving directory '/usr/src/kernels/5.14.0-570.24.1.el9_6.ppc64le'
+make[1]: *** [makefile:149: modules] Error 1
+make[1]: Leaving directory '/usr/lpp/mmfs/src/gpl-linux'
+make: *** [makefile:145: Modules] Error 1
+--------------------------------------------------------
+mmbuildgpl: Building GPL module failed at Wed Jul  2 01:35:38 AM EDT 2025.
+--------------------------------------------------------
+mmbuildgpl: Command failed. Examine previous error messages to determine cause.
